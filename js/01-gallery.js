@@ -6,7 +6,6 @@ console.log(galleryItems);
 //se toman las imagenes y se importan
 
 const gallery = document.querySelector('.gallery');
-gallery.addEventListener('click', (event) => event.preventDefault());
 
 // se crea la funcion para crear la galeria y los elementos
 
