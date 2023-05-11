@@ -23,7 +23,7 @@ containerGallery.addEventListener('click', (event) => event.preventDefault());
 
 // uso de la libreria simpleLightBox
 
-let lightbox = new SimpleLightBox('.gallery a', {
+let lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
