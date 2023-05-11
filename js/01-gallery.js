@@ -5,14 +5,16 @@ console.log(galleryItems);
 
 //se toman las imagenes y se importan
 
-const galleryContainer = document.querySelector('.gallery');
+const gallery = document.querySelector('.gallery');
 
 // se crea la funcion para crear la galeria y los elementos
 
-const builderGallery = galleryItems.map(
+function createGallery(items) {
+  return items
+    .map(
       (item) =>
         `<li class = "gallery__item">
-  <a class="gallery__link" href="${item.original}">
+  <a class="gallery__link" href="large-image.jpg">
   <img class= "gallery__image"
   src="${item.preview}";
   data-source="${item.original}"
@@ -22,13 +24,11 @@ const builderGallery = galleryItems.map(
     )
     .join('');
   //se usa join para que todas las imagenes esten dentro de una misma matriz
-
-  galleryContainer.insertAdjacentHTML("afterbegin", builderGallery);
-  galleryContainer.addEventListener("click", (event)=> event.preventDefault())
+}
 
 //se crea la constante para añadir la galeria dentro de html usando el innerHTML
 
-/*const addGallery = createGallery(galleryItems);
+const addGallery = createGallery(galleryItems);
 gallery.innerHTML = addGallery;
 gallery.addEventListener('çlick', clickOnImage);
 
@@ -50,4 +50,4 @@ function clickOnImage(imageAction) {
       instance.close();
     }
   });
-}/*
+}
