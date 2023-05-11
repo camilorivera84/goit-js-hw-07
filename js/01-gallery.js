@@ -41,7 +41,7 @@ function clickOnImage(imageAction) {
     return;
   }
 
-  const instance = basicLightBox.create(
+  const instance = basicLightbox.create(
     `<img src="${imageAction.target.dataset.source}" width = "800" height="600">`
   );
   instance.show();
@@ -51,4 +51,8 @@ function clickOnImage(imageAction) {
       instance.close();
     }
   });
+}
+
+function action(imageAction) {
+  imageAction.preventDefault();
 }
