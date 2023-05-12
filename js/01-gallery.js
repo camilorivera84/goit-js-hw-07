@@ -30,8 +30,8 @@ galleryContainer.addEventListener('click', (event) => event.preventDefault());
 //se crea la constante para añadir la galeria dentro de html usando el innerHTML
 
 /*const addGallery = createGallery(galleryItems);
-gallery.innerHTML = addGallery;*/
-builderGallery.addEventListener('click', clickOnImage);
+gallery.innerHTML = addGallery;
+builderGallery.addEventListener('click', clickOnImage);*/
 
 //se define la funcion clickOnImage para que abra la dentro de un modal
 
