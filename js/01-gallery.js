@@ -28,7 +28,6 @@ alt = "${item.description}"
 //se crea la constante para añadir la galeria dentro de html usando el innerHTML
 
 const addGallery = createGallery(galleryItems);
-gallery.innerHTML = addGallery;
 gallery.addEventListener('click', clickOnImage);
 
 //se define la funcion clickOnImage para que abra la dentro de un modal
