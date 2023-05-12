@@ -7,22 +7,23 @@ console.log(galleryItems);
 
 const containerGallery = document.querySelector('.gallery');
 
-const galleryMarkup = galleryItems
-  .map(
-    (element) => `<li class= "gallery__item">
-<a class = "gallery__link" href = "${element.original}">
+function createGallery(items) {
+  return items
+    .map(
+      (item) => `<li class= "gallery__item">
+<a class = "gallery__link" href = "${item.original}">
 <img class= "gallery__image"
-src = "${element.preview}"
-data-source = "${element.original}"
-alt = "${element.description}"
+src = "${item.preview}"
+data-source = "${item.original}"
+alt = "${item.description}"
 />
 </a>
 </li>`
-  )
-  .join('');
-
-containerGallery.insertAdjacentHTML('afterbegin', galleryMarkup);
-containerGallery.addEventListener('click', (event) => event.preventDefault());
+    )
+    .join('');
+}
+//containerGallery.insertAdjacentHTML('afterbegin', galleryMarkup);
+//containerGallery.addEventListener('click', (event) => event.preventDefault());
 
 //se crea la constante para añadir la galeria dentro de html usando el innerHTML
 
