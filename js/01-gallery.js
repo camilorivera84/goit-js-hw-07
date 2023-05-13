@@ -26,9 +26,6 @@ function createGallery(items) {
 }
 //se usa join para que todas las imagenes esten dentro de una misma matriz
 
-//galleryContainer.insertAdjacentHTML('afterbegin', builderGallery);
-//galleryContainer.addEventListener('click', (event) => event.preventDefault());
-
 //se crea la constante para añadir la galeria dentro de html usando el innerHTML
 
 const addGallery = createGallery(galleryItems);
